@@ -62,3 +62,29 @@ export class HomePage implements OnInit{
   }
 }
 ```
+
+6. Crear aplicación de android
+`ionic cap add android`
+
+7. Construir con build
+`ionic build`
+
+8. Configurar manifiesto para dar permiso a la camara. Agregar antes de cerrar etiqueta manifest
+```
+<!-- To get access to the camera. -->
+<uses-permission android:name="android.permission.CAMERA" />
+<!-- To get access to the flashlight. -->
+<uses-permission android:name="android.permission.FLASHLIGHT"/>
+```
+
+y dentro de la etiqueta <aplication> agregar
+```
+<meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode_ui"/>
+```
+
+9. Agregar los cambios a la aplicación
+`ionic cap copy android`
+
+
+10. Sincronizar
+`ionic cap sync`

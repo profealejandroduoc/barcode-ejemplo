@@ -77,7 +77,7 @@ export class HomePage implements OnInit{
 <uses-permission android:name="android.permission.FLASHLIGHT"/>
 ```
 
-y dentro de la etiqueta <aplication> agregar
+y dentro de la etiqueta **aplication** agregar
 ```
 <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode_ui"/>
 ```

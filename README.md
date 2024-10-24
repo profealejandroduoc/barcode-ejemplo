@@ -1,3 +1,21 @@
+# Escanear Barcode Scanner y Ionic 7
+
+[Crear aplicación con Barcode](https://ionic.io/blog/how-to-build-an-ionic-barcode-scanner-with-capacitor)
+
+### GUIA
+1. Crear aplicación de forma normal en ionic (testeado con ngmodules)
+
+2. Instalar la libraría.
+`npm install @capacitor-mlkit/barcode-scanning`
+
+3. Personalizar la página donde se escanea con un botoón para acceder a la función.
+
+4. Importar en el .ts de la página.
+`import { Barcode, BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';`
+
+5. Configurar el .ts de la página
+
+```
 import { Component, OnInit } from '@angular/core';
 import { Barcode, BarcodeScanner } from '@capacitor-mlkit/barcode-scanning';
 import { AlertController } from '@ionic/angular';
@@ -43,3 +61,4 @@ export class HomePage implements OnInit{
     await alert.present();
   }
 }
+```
